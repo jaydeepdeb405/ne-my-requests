@@ -1,0 +1,40 @@
+@import '@servicenow/sass-kit/host';
+
+now-loader {
+    margin-top: 5vh;
+}
+
+.card-wrapper now-card {
+    margin: 10px auto;
+}
+
+.card-top,
+.card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.cat-img {
+    margin-top: 0.5rem;
+    height: 70px;
+}
+
+.ritm-attrs div {
+    color: RGB(var(--now-color--neutral-9, 99, 114, 116));
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.card-bottom .ritm-attrs {
+    text-align: end;
+    align-self: flex-end;
+}
+
+.card-bottom .ritm-attrs div:nth-of-type(1) {
+    font-size: 0.9rem;
+}
+
+.card-bottom .ritm-attrs div:nth-of-type(2) {
+    font-size: 0.75rem;
+}

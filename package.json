@@ -1,0 +1,39 @@
+{
+	"name": "@nowexp/my-requests",
+	"version": "0.0.1",
+	"private": false,
+	"description": "Now Experience component to display all my requests",
+	"keywords": [
+		"ServiceNow",
+		"Now Experience UI Component",
+		"@nowexp/my-requests"
+	],
+	"readme": "./README.md",
+	"engines": {
+		"node": ">=8.6.0",
+		"npm": ">=5.3.0"
+	},
+	"module": "src/index.js",
+	"dependencies": {
+		"@servicenow/cli-archetype": "18.0.0",
+		"@servicenow/cli-component-archetype": "18.0.0",
+		"@servicenow/library-translate": "paris",
+		"@servicenow/sass-kit": "paris",
+		"@servicenow/sass-theme": "paris",
+		"@servicenow/ui-core": "paris",
+		"@servicenow/ui-effect-http": "^18.2.5",
+		"@servicenow/ui-renderer-snabbdom": "paris",
+		"@servicenow/now-alert": "^18.4.2",
+		"@servicenow/now-card": "^18.4.2",
+		"@servicenow/now-heading": "^18.4.2",
+		"@servicenow/now-highlighted-value": "^18.4.2",
+		"@servicenow/now-input": "^18.4.2",
+		"@servicenow/now-loader": "^18.4.2",
+		"@servicenow/now-modal": "^18.4.2",
+		"@servicenow/now-text-link": "^18.4.2"
+	},
+	"devDependencies": {
+		"@servicenow/cli-archetype-dev": "18.0.0",
+		"@servicenow/cli-component-archetype-dev": "18.0.0"
+	}
+}

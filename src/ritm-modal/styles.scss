@@ -1,0 +1,47 @@
+.modal-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.cat-img {
+    margin-top: 0.5rem;
+    height: 100px;
+}
+
+.ritm-attrs {
+    color: RGB(var(--now-color--neutral-9, 99, 114, 116));
+    align-self: center;
+}
+
+.ritm-attrs div {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.modal-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.modal-right now-highlighted-value,
+now-text-link,
+.ritm-attrs {
+    margin-bottom: 0.5rem;
+}
+
+.modal-right .ritm-attrs {
+    margin-top: 40px;
+    text-align: end;
+}
+
+.modal-left .ritm-attrs div:nth-of-type(1) {
+    color: black;
+}
+
+.modal-left .ritm-attrs div:nth-of-type(2),
+div:nth-of-type(3) {
+    font-size: 0.85rem;
+    margin: 0;
+}

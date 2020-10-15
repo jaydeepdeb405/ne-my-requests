@@ -1,2 +1,3 @@
-# ne-my-requests
-A NowExperience "My Requests" Component
+@nowexp/my-requests
+===============================================
+Now Experience component to display all my requests with realtime updates
