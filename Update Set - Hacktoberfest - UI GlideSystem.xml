@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2020-10-15 16:16:37">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>GlideSystem API for usage in NowExperience components</description>
+<inserted/>
+<name>Hacktoberfest - UI GlideSystem</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>7e9bd06207bf901037c7f2ae7c1ed0d5</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>jaydeepdeb</sys_created_by>
+<sys_created_on>2020-10-15 16:16:36</sys_created_on>
+<sys_id>bd3b8e760737541037c7f2ae7c1ed057</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>jaydeepdeb</sys_updated_by>
+<sys_updated_on>2020-10-15 16:16:36</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ws_definition_83eb1c6207bf901037c7f2ae7c1ed0d1</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_definition"><sys_ws_definition action="INSERT_OR_UPDATE"><active>true</active><base_uri>/api/488924/gs</base_uri><consumes>application/json,application/xml,text/xml</consumes><consumes_customized>false</consumes_customized><default_version>No active default version</default_version><doc_link/><enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl><is_versioned>false</is_versioned><name>UI GlideSystem</name><namespace>488924</namespace><produces>application/json,application/xml,text/xml</produces><produces_customized>false</produces_customized><service_id>gs</service_id><short_description>UI GlideSystem for usage in Now Experience components</short_description><sys_class_name>sys_ws_definition</sys_class_name><sys_created_by>jaydeepdeb</sys_created_by><sys_created_on>2020-10-14 13:32:13</sys_created_on><sys_id>83eb1c6207bf901037c7f2ae7c1ed0d1</sys_id><sys_mod_count>1</sys_mod_count><sys_name>UI GlideSystem</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ws_definition_83eb1c6207bf901037c7f2ae7c1ed0d1</sys_update_name><sys_updated_by>jaydeepdeb</sys_updated_by><sys_updated_on>2020-10-14 13:57:43</sys_updated_on></sys_ws_definition></record_update>]]></payload>
+<payload_hash>1987469448</payload_hash>
+<remote_update_set display_value="Hacktoberfest - UI GlideSystem">bd3b8e760737541037c7f2ae7c1ed057</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>jaydeepdeb</sys_created_by>
+<sys_created_on>2020-10-15 16:16:36</sys_created_on>
+<sys_id>353b8e760737541037c7f2ae7c1ed058</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>175276702b00000001</sys_recorded_at>
+<sys_updated_by>jaydeepdeb</sys_updated_by>
+<sys_updated_on>2020-10-15 16:16:36</sys_updated_on>
+<table/>
+<target_name>UI GlideSystem</target_name>
+<type>Scripted REST API</type>
+<update_domain>global</update_domain>
+<update_guid>f1d1242e58bf90105fc75af015ec4f36</update_guid>
+<update_guid_history>f1d1242e58bf90105fc75af015ec4f36:1987469448,d80c98ae2b7f90108e334b1033d2bef7:-1944001176</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ws_operation_360c50a207bf901037c7f2ae7c1ed05e</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ws_operation"&gt;&lt;sys_ws_operation action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;consumes&gt;application/json,application/xml,text/xml&lt;/consumes&gt;&lt;consumes_customized&gt;false&lt;/consumes_customized&gt;&lt;default_operation_uri/&gt;&lt;enforce_acl&gt;cf9d01d3e73003009d6247e603f6a990&lt;/enforce_acl&gt;&lt;http_method&gt;GET&lt;/http_method&gt;&lt;name&gt;Default GET&lt;/name&gt;&lt;operation_script&gt;&lt;![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+	var methodName = request.pathParams.methodName.toString();
+	var args = request.queryParams.args.toString().split(',');	
+	var gsMethod = gs[methodName];
+	return gsMethod ? gsMethod.apply(this, args) : "Invalid method name";
+})(request, response);]]&gt;&lt;/operation_script&gt;&lt;operation_uri&gt;/api/488924/gs/{methodName}&lt;/operation_uri&gt;&lt;produces&gt;application/json,application/xml,text/xml&lt;/produces&gt;&lt;produces_customized&gt;false&lt;/produces_customized&gt;&lt;relative_path&gt;/{methodName}&lt;/relative_path&gt;&lt;request_example/&gt;&lt;requires_acl_authorization&gt;true&lt;/requires_acl_authorization&gt;&lt;requires_authentication&gt;true&lt;/requires_authentication&gt;&lt;requires_snc_internal_role&gt;true&lt;/requires_snc_internal_role&gt;&lt;short_description&gt;GlideSystem {methodName} as path param, {args} as query param (comma-separated)&lt;/short_description&gt;&lt;sys_class_name&gt;sys_ws_operation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jaydeepdeb&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-10-14 13:33:52&lt;/sys_created_on&gt;&lt;sys_id&gt;360c50a207bf901037c7f2ae7c1ed05e&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_name&gt;Default GET&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ws_operation_360c50a207bf901037c7f2ae7c1ed05e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;jaydeepdeb&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-10-14 13:59:54&lt;/sys_updated_on&gt;&lt;web_service_definition display_value="UI GlideSystem"&gt;83eb1c6207bf901037c7f2ae7c1ed0d1&lt;/web_service_definition&gt;&lt;web_service_version/&gt;&lt;/sys_ws_operation&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-488299448</payload_hash>
+<remote_update_set display_value="Hacktoberfest - UI GlideSystem">bd3b8e760737541037c7f2ae7c1ed057</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>jaydeepdeb</sys_created_by>
+<sys_created_on>2020-10-15 16:16:36</sys_created_on>
+<sys_id>3d3b8e760737541037c7f2ae7c1ed058</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>175276901260000001</sys_recorded_at>
+<sys_updated_by>jaydeepdeb</sys_updated_by>
+<sys_updated_on>2020-10-15 16:16:36</sys_updated_on>
+<table/>
+<target_name>Default GET</target_name>
+<type>Scripted REST Resource</type>
+<update_domain>global</update_domain>
+<update_guid>6952a06e91bf9010809852ca83987a1b</update_guid>
+<update_guid_history>6952a06e91bf9010809852ca83987a1b:-488299448,dd91286a40bf9010851348621cd274a9:526116967,1640ece654bf9010aee8e033a22f353f:2113816144,9600a42a56bf901003842fbed477c6c7:358843137,51af1866b7bf9010303521bb750a6e7e:1267961716,146f9ce69cbf90102104a0043841a0d7:358843137,291f1866b7bf90102136746cefd0ec77:-2132623865,898cdc62f0bf9010998b1cb7334ab5fd:-1354167062,d46cdc6237bf9010bf8b0f7fd299c9f8:572737395</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
