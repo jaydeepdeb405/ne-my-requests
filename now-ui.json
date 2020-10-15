@@ -1,0 +1,15 @@
+{
+	"components": {
+	    "x-488924-my-requests": {
+	        "innerComponents": [],
+			"uiBuilder": {
+				"associatedTypes": ["global.core", "global.landing-page"],
+				"label": "My Requests",
+				"icon": "user-plus-outline",
+				"description": "Now Experience component to display all my requests",
+				"category": "primitives"
+			}
+	    }
+	},
+	"scopeName": "x_488924_my_req"
+}
